@@ -1,0 +1,7 @@
+reports/sources/
+data/
+outputs/
+.venv/
+third_party/
+__pycache__/
+.ipynb_checkpoints/
