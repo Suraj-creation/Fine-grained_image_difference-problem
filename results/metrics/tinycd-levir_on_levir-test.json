@@ -1,0 +1,127 @@
+{
+  "tag": "tinycd-levir_on_levir-test",
+  "dataset": "levir",
+  "split": "test",
+  "n_pairs": 2048,
+  "checkpoint": "third_party/Tiny_model_4_CD/pretrained_models/levir_best.pth",
+  "threshold": 0.5,
+  "precision": 0.9265176313555115,
+  "recall": 0.8954086960489527,
+  "f1": 0.9106975154790973,
+  "iou": 0.8360374072625931,
+  "oa": 0.9910541474819174,
+  "confusion_pixels": {
+    "TP": 6122271,
+    "FP": 485559,
+    "FN": 715133,
+    "TN": 126894765
+  },
+  "ci95_bootstrap_over_images": {
+    "precision": [
+      0.9231444612845779,
+      0.930237284394995
+    ],
+    "recall": [
+      0.8875653913398927,
+      0.902682388337116
+    ],
+    "f1": [
+      0.9063062216144581,
+      0.9146698140571968
+    ],
+    "iou": [
+      0.8286655266353138,
+      0.8427572881401483
+    ]
+  },
+  "no_change_pairs": {
+    "n": 1113,
+    "pairs_with_any_false_alarm": 33,
+    "pixel_fpr": 0.00010870344876600405
+  },
+  "by_changed_area_bucket": {
+    "no-change": {
+      "n_pairs": 1113,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "iou": 0.0,
+      "oa": 0.9998912965512323
+    },
+    "0-1%": {
+      "n_pairs": 137,
+      "precision": 0.7793949666497324,
+      "recall": 0.4868572480767381,
+      "f1": 0.5993340797225339,
+      "iou": 0.42789229866585055,
+      "oa": 0.9968501181497929
+    },
+    "1-5%": {
+      "n_pairs": 223,
+      "precision": 0.8974972982193646,
+      "recall": 0.7956122304912798,
+      "f1": 0.8434891717420224,
+      "iou": 0.7293397120338188,
+      "oa": 0.9919866040148462
+    },
+    "5-20%": {
+      "n_pairs": 377,
+      "precision": 0.9254816757011142,
+      "recall": 0.8903190060252539,
+      "f1": 0.9075598217383974,
+      "iou": 0.8307639620722658,
+      "oa": 0.9792788072985695
+    },
+    ">20%": {
+      "n_pairs": 198,
+      "precision": 0.9334654449338488,
+      "recall": 0.9154674920590921,
+      "f1": 0.9243788107209289,
+      "iou": 0.8593907694941701,
+      "oa": 0.9587388472123491
+    }
+  },
+  "object_recall_by_gt_component_size": {
+    "0-50px": {
+      "n_objects": 527,
+      "recall_at_50pct_overlap": 0.1954459203036053
+    },
+    "50-200px": {
+      "n_objects": 769,
+      "recall_at_50pct_overlap": 0.6801040312093628
+    },
+    "200-1000px": {
+      "n_objects": 5609,
+      "recall_at_50pct_overlap": 0.9597076127651988
+    },
+    ">=1000px": {
+      "n_objects": 1768,
+      "recall_at_50pct_overlap": 0.9790723981900452
+    }
+  },
+  "inference": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce GTX 1080 Ti",
+    "eval_wall_clock_s": 31.94717025756836,
+    "eval_batch": 16,
+    "eval_peak_gpu_mem_MiB_batch": 866.4619140625,
+    "parameters": 285128,
+    "state_dict_elements": 293877,
+    "checkpoint_bytes": 1276499,
+    "peak_gpu_mem_MiB_batch1_256x256": 377.751953125,
+    "latency_ms_batch1_model_only": {
+      "median": 18.357118009589612,
+      "p95": 18.484987469855696,
+      "n": 200
+    },
+    "latency_ms_batch1_with_preprocess": {
+      "median": 20.968901459127665
+    }
+  },
+  "environment": {
+    "python": "3.10.12",
+    "torch": "2.7.1+cu118",
+    "cuda_runtime": "11.8",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+  }
+}

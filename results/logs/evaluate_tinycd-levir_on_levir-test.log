@@ -1,0 +1,9 @@
+[tinycd-levir_on_levir-test] 2048 pairs | params=285,128 | ckpt=/home/administrator/Desktop/image difference/third_party/Tiny_model_4_CD/pretrained_models/levir_best.pth (1.28 MB)
+{
+ "precision": 0.9265176313555115,
+ "recall": 0.8954086960489527,
+ "f1": 0.9106975154790973,
+ "iou": 0.8360374072625931,
+ "oa": 0.9910541474819174
+}
+CI95 F1: [0.9063062216144581, 0.9146698140571968] | latency ms: {'median': 18.357118009589612, 'p95': 18.484987469855696, 'n': 200}

@@ -1,0 +1,6 @@
+{
+ "rgb_fixed_threshold": 103,
+ "selected_on": "LEVIR-CD-256 val (1024 pairs), maximising pixel F1",
+ "val_f1": 0.12825653332947962,
+ "diff": "mean over RGB channels of |A-B|, uint8"
+}
