@@ -1,0 +1,14 @@
+/home/administrator/Desktop/image difference/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/administrator/Desktop/image difference/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=EfficientNet_B4_Weights.IMAGENET1K_V1`. You can also use `weights=EfficientNet_B4_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/efficientnet_b4_rwightman-23ab8bcd.pth" to /home/administrator/.cache/torch/hub/checkpoints/efficientnet_b4_rwightman-23ab8bcd.pth
+
+
+Number of model parameters 285128
+
+
+Test summary
+Loss is 0.02685391716659069
+
+{'acc': np.float64(0.9910541474819174), 'miou': np.float64(0.913331995655384), 'mf1': np.float64(0.9529943396187852), 'iou_0': np.float64(0.9906265840481749), 'iou_1': np.float64(0.8360374072625931), 'F1_0': np.float64(0.995291163758473), 'F1_1': np.float64(0.9106975154790973), 'precision_0': np.float64(0.9943959441139893), 'precision_1': np.float64(0.9265176313555115), 'recall_0': np.float64(0.9961881161489264), 'recall_1': np.float64(0.8954086960489527)}
