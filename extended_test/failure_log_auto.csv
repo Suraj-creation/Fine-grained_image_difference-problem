@@ -1,0 +1,20 @@
+pair,tier,observation
+levir_01,A (valid),"MISSED – recall 0.08, only 0.01% of the tile flagged vs 0.19% labelled changed"
+levir_02,A (valid),"MISSED – recall 0.00, only 0.00% of the tile flagged vs 0.28% labelled changed"
+levir_06,A (valid),FALSE ALARMS – precision 0.36 (flagged 4.21% vs 2.94% labelled)
+sysu_01,"B (valid, cross-dataset)",SILENT – flagged 0.00% of the tile; labelled change 1.9%; max probability 0.18
+sysu_02,"B (valid, cross-dataset)",SILENT – flagged 0.00% of the tile; labelled change 21.0%; max probability 0.01
+sysu_03,"B (valid, cross-dataset)",SILENT – flagged 0.00% of the tile; labelled change 86.5%; max probability 0.26
+sysu_04,"B (valid, cross-dataset)",SILENT – flagged 0.00% of the tile; labelled change 19.8%; max probability 0.09
+photo_vehicles_02,C (proxy),"NOT DETECTED – 0.01% of the image flagged (an edit exists, see the RGB-diff column)"
+photo_vehicles_03,C (proxy),"NOT DETECTED – 0.42% of the image flagged (an edit exists, see the RGB-diff column)"
+photo_people_04,C (proxy),"NOT DETECTED – 0.16% of the image flagged (an edit exists, see the RGB-diff column)"
+photo_people_05,C (proxy),"NOT DETECTED – 0.64% of the image flagged (an edit exists, see the RGB-diff column)"
+photo_everyday_07,C (proxy),"NOT DETECTED – 0.35% of the image flagged (an edit exists, see the RGB-diff column)"
+photo_everyday_08,C (proxy),"NOT DETECTED – 0.08% of the image flagged (an edit exists, see the RGB-diff column)"
+photo_everyday_10,C (proxy),"NOT DETECTED – 0.00% of the image flagged (an edit exists, see the RGB-diff column)"
+photo_outdoor_11,C (proxy),"NOT DETECTED – 0.06% of the image flagged (an edit exists, see the RGB-diff column)"
+wm_landmark_notredame,D (qualitative),"flagged 0.00% of the image, max probability 0.09 – judge by eye (see 4D)"
+wm_landmark_fawley,D (qualitative),"flagged 0.00% of the image, max probability 0.09 – judge by eye (see 4D)"
+wm_building_sydenham,D (qualitative),"flagged 1.75% of the image, max probability 0.95 – judge by eye (see 4D)"
+wm_building_bigmill,D (qualitative),"flagged 0.32% of the image, max probability 0.92 – judge by eye (see 4D)"

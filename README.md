@@ -23,6 +23,18 @@ Python 3.10 note: the official repo does `from collections import Sized` (remove
 
 **Why SYSU fails:** model outputs are weak there (mean max-prob ≈ 0.14) *and* SYSU labels are coarse region polygons (~24 % of pixels), not building outlines, so the annotation style does not match what TinyCD learned. Treat it as a domain-shift warning, not a fair accuracy figure. A val-tuned threshold was not run.
 
+## Extended test (32 pairs, mixed domains)
+`notebooks/tinycd_demo_extended.ipynb` (executed; the first notebook is unchanged) runs the same pretrained model on 32 pairs and saves every input/output under `extended_test/`; see `extended_test/README.md` for the folder map and `pairs_manifest.csv` for sources and licences.
+
+| Group | Pairs | Ground truth | Result (official 0.5 threshold, no tuning) |
+|---|---|---|---|
+| A - LEVIR-CD tiles (home domain) | 12 | official | pooled F1 **0.875** (95% CI 0.69-0.93, only 12 tiles; full 2,048-pair test: 0.911); 2/2 no-change tiles clean; misses tiny changes (0.1-0.3% of tile), 1 tile with many false alarms |
+| B - SYSU-CD tiles | 4 | official, coarse | F1 **0.00**: outputs nothing (cross-dataset collapse); labels are rough regions |
+| C - MagicBrush photos (vehicles/people/everyday/outdoor) | 12 | proxy (editable region) | **not a valid F1**; 8 of 12 edits flagged <1% of the image; partial hits only on the pizza and the added mountains, large wrong areas on the cruise-ship pair |
+| D - Wikimedia real before/after (landmarks, buildings) | 4 | none | qualitative only; Fawley chimney removal and Notre-Dame **not detected** |
+
+Only A and B are valid F1/IoU evaluations. Environment rebuilt from `requirements.lock.txt` (Python 3.10, torch 2.7.1+cu118).
+
 ## Not done (and why)
 - **WHU-CD reproduction:** the official page blocks scripted access (WAF), the authors' pre-processed copy is on a Google Drive folder returning HTTP 401, and their split was *random* (5947/743/744), so a self-made split would leak training patches. `whu_best.pth` is in the repo but untested.
 - Large-scale deliverables from the original brief (full reports, robustness tests) were dropped after the request to keep this to a sample-pair notebook. Extra scripts in `scripts/` (`evaluate.py`, `select_threshold.py`, `download_data.py`) and full-test results in `results/` are from the earlier run and are optional.

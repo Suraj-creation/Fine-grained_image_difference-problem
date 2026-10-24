@@ -1,0 +1,11 @@
+group,category,tier,valid_f1_iou,n_pairs,mean_pred_change_pct,mean_latency_ms,tinycd_precision,tinycd_recall,tinycd_f1,tinycd_iou,otsu_precision,otsu_recall,otsu_f1,otsu_iou,fixed_precision,fixed_recall,fixed_f1,fixed_iou,tinycd_false_alarm_pixels,otsu_false_alarm_pixels,fixed_false_alarm_pixels,tinycd_false_alarm_outside_region_pct,otsu_false_alarm_outside_region_pct
+aerial_levir,aerial-building-change,"A: official GT, in-domain",yes,10,6.09,22.5,0.8968,0.8539,0.8748,0.7775,0.0728,0.4136,0.1238,0.066,0.1264,0.2236,0.1615,0.0879,,,,,
+aerial_levir,aerial-no-change,"A: official GT, in-domain",yes,2,0.0,21.8,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,0,30399,4970,,
+aerial_sysu,aerial-cross-dataset,"B: official GT, cross-dataset",yes (cross-dataset),4,0.0,22.0,0.0,0.0,0.0,0.0,0.4894,0.4232,0.4539,0.2936,0.4835,0.1238,0.1971,0.1093,,,,,
+photo_edit,vehicles,C: proxy GT (indicative),no - proxy only,3,8.55,49.0,0.701,0.1217,0.2074,0.1157,0.9688,0.0619,0.1164,0.0618,0.9674,0.0256,0.0499,0.0256,,,,5.936,0.228
+photo_edit,people,C: proxy GT (indicative),no - proxy only,3,1.54,44.8,0.6583,0.0165,0.0321,0.0163,0.9859,0.1257,0.223,0.1255,0.9436,0.0171,0.0335,0.017,,,,1.212,0.302
+photo_edit,everyday-objects,C: proxy GT (indicative),no - proxy only,4,1.41,43.6,0.954,0.0184,0.0361,0.0184,0.9751,0.0647,0.1213,0.0646,0.9611,0.0198,0.0387,0.0198,,,,0.47,0.664
+photo_edit,outdoor-scenes,C: proxy GT (indicative),no - proxy only,2,5.86,43.3,0.9953,0.0997,0.1813,0.0997,0.9921,0.4137,0.5839,0.4124,0.9338,0.0097,0.0191,0.0097,,,,0.085,0.514
+photo_real,landmarks,D: no GT (qualitative),no - no GT,2,0.0,44.5,,,,,,,,,,,,,,,,,
+photo_real,buildings,D: no GT (qualitative),no - no GT,1,1.75,46.9,,,,,,,,,,,,,,,,,
+photo_real,buildings-aerial,D: no GT (qualitative),no - no GT,1,0.32,47.5,,,,,,,,,,,,,,,,,
